@@ -196,6 +196,27 @@
 }
 
 #carousel {
+    .carousel-res{
+        display: none;
+        margin-top: 70px;
+        width: 100%;
+        height: 100px;
+        border: 1px solid rgba(128, 128, 128, 0.562);
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        
+        img {
+            width: 150px;
+            height: 100%;
+            opacity: 0.7;
+            margin-left: 40px;
+            &:hover {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+        }
+    }
     .carousel-wrapper {
         margin-top: 70px;
         width: 100%;
@@ -506,7 +527,7 @@
 
      .tv-img{
         margin-left: 20px;
-        width: 770px;
+        width: 100%;
         height: 226px;
         img{
             width: 100%;
@@ -548,6 +569,68 @@
             margin-top: 20px;
         }
     }
+}
+
+
+@media screen and (max-width: 600px) {
+     
+   .header-down{
+      .mg-img{
+        width: 100px;
+        height: 20px;
+      }
+      .input-icons input{
+        width: 200px;
+        height: 35px;
+      }
+      .contact{
+        .contact-text{
+            margin-top: 10px;
+            margin-left: -70px;
+            span{
+                font-size: 20px;
+               
+            }
+        }
+       
+      }
+      .shopping{
+        .like{
+            margin-top: 15px;
+           width: 25px;
+           height: 25px;
+        }
+        .bucket{
+            margin-top: 15px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+   }
+   #slider-wrapper{
+
+    .slider{
+        margin-top: 50px;
+    }
+    .slider-navbar{
+        .navbar{
+            display: none;
+        }
+    }
+   }
+   #carousel{
+    .carousel-wrapper{
+        display: none;
+    }
+     .carousel-res{
+        display: block;
+     }
+   }
+   #private-offer{
+    .offer-img-box{
+        width: 430px;
+    }
+   }
 }
    
       
